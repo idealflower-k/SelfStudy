@@ -2,10 +2,9 @@
 
 int main(void)
 {
-    int num = -16;
-
-    printf("2칸 이동 : %d\n", num >> 2);
-    printf("3칸 이동 : %d\n", num >> 3);
+    printf("literal int size : %d \n", sizeof(7));
+    printf("literal double size : %d \n", sizeof(7.14));
+    printf("literal char size : %d \n", sizeof('A'));
 
     return (0);
 }
