@@ -2,9 +2,12 @@
 
 int main(void)
 {
-    printf("literal int size : %d \n", sizeof(7));
-    printf("literal double size : %d \n", sizeof(7.14));
-    printf("literal char size : %d \n", sizeof('A'));
+    int age;
+
+    printf("나이 입력: ");
+    scanf("%d", &age);
+    printf("제 나이는 10진수로 %d살, 16진수로 %x살입니다", age, age);
+
 
     return (0);
 }
