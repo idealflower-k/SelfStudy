@@ -2,12 +2,15 @@
 
 int main(void)
 {
-    int age;
-
-    printf("나이 입력: ");
-    scanf("%d", &age);
-    printf("제 나이는 10진수로 %d살, 16진수로 %x살입니다", age, age);
-
+    int total = 0, num = 0;
+    
+    do
+    {
+        printf("정수 입력 (0 종료): ");
+        scanf("%d", &num);
+        total += num;
+    } while (num != 0);
+    printf("합계: %d\n", total);
 
     return (0);
 }
