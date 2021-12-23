@@ -1,36 +1,29 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+const int BREAD = 500;
+const int SNACK = 700;
+const int DRINK = 400;
+
 int main(void)
 {
-    const int cream = 500, shrimp = 700, coke = 400;
-    int change = 0, n_cream = 1, n_shrimp = 1, n_coke = 1;
-    int i = 0, j = 0, temp;
-    printf("현재 당신이 소유하고 있는 금액: ");
-    scanf("%d", &change);
+    int i, j, k;
+    int money;
+    printf("현재 소유하고 있는 현금: ");
+    scanf("%d", &money);
 
-    temp = change;
-
-    for (n_cream = 1; n_cream * cream <= change; n_cream++)
-    {   
-        if (change == (n_cream * cream) + (n_shrimp * shrimp) + (n_coke * coke))
+    for (i = 1; i < money / BREAD; i++)
+    {
+        for (j = 1; j < money / SNACK; j++)
         {
-            printf("크림빵: %d개, 새우깡: %d개, 콜 라: %d개\n", n_cream, n_shrimp, n_coke);
-        }
-        for (n_shrimp = 1; n_shrimp * shrimp <+ change; n_shrimp++)
-        {   
-            if (change == (n_cream * cream) + (n_shrimp * shrimp) + (n_coke * coke))
+            for (k = 1; k < money / DRINK; k++)
             {
-                printf("크림빵: %d개, 새우깡: %d개, 콜 라: %d개\n", n_cream, n_shrimp, n_coke);
-            }
-            for (n_coke = 1; n_coke * coke <= change; n_coke++)
-            {
-                if (change == (n_cream * cream) + (n_shrimp * shrimp) + (n_coke * coke))
+                if (money == (BREAD * i) + (SNACK * j) + (DRINK * k))
                 {
-                    printf("크림빵: %d개, 새우깡: %d개, 콜 라: %d개\n", n_cream, n_shrimp, n_coke);
+                    printf("크림빵: %d개, 새우깡: %d개, 콜 라: %d개\n", i, j, k);
                 }
             }
         }
-    }    
+    }
     return (0);
 }
