@@ -4,7 +4,7 @@
 int main(void)
 {
     int n1, n2, temp;
-    printf("구구단출력 정수 두 개입력: ");
+    printf("구구단출력 정수 두 개입력하세요: ");
     scanf("%d %d", &n1, &n2);
 
     if (n1 > n2)

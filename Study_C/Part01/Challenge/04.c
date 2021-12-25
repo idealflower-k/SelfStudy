@@ -9,7 +9,7 @@ int main(void)
 {
     int i, j, k;
     int money;
-    printf("현재 소유하고 있는 현금: ");
+    printf("현재 소유하고 있는 현금입력: ");
     scanf("%d", &money);
 
     for (i = 1; i < money / BREAD; i++)
