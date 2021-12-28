@@ -10,7 +10,7 @@
 //     printf("영어 단어 입력: ");
 //     scanf("%s", arr);
 
-//     while (arr[arrLen] != 0)
+//     while (arr[arrLen] != 0) // arr배열 변수 길이 측정
 //     {
 //         arrLen++;
 //     }
@@ -32,7 +32,7 @@
 //         len++;
 //     }
     
-//     for (i = 0; i < len/2; i++)
+//     for (i = 0; i < len/2; i++)  // 갈이의 절반만 돌려야 역순가능
 //     {
 //         temp = arr[i];
 //         arr[i] = arr[(len - i) - 1];
