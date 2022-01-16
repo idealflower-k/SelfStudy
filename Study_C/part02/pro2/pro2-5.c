@@ -1,4 +1,4 @@
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 void des_sort(int * arr, int len)
@@ -17,6 +17,7 @@ void des_sort(int * arr, int len)
                 arr[j + 1] = temp;
             }
         }
+        printf("%d\n",i);
     }
     for (int i = 0; i < len; i++)
     {
